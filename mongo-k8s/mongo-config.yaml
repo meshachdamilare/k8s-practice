@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongodb-configmap
+data:
+  database_url: mongodb-service # In thiscase,  mongo-service, the clusterIP service of the pod on hosting the monogodb container is our db url.
+  
+#create CONFIG using kubectl command before referencing it in your deployment.
